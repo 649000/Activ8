@@ -4,6 +4,7 @@ import app.event.CategoryService
 import grails.test.mixin.TestFor
 import org.junit.Assert
 import spock.lang.Specification
+import app.event.Category;
 
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
