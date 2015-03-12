@@ -1,4 +1,7 @@
-package app
+package app.user
+
+import app.event.Event
+import app.event.Subcategory
 
 class User {
     
@@ -8,7 +11,8 @@ class User {
     String email
     int phoneNumber
     String address
-    
+    PreferenceCollection preferenceCollection;
+
     static constraints =
     {
         userid(blank: false)

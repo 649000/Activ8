@@ -1,9 +1,9 @@
-package app
+package app.event
 
 import grails.transaction.Transactional
 
 @Transactional
-class UserService {
+class EventService implements IEventService {
 
     def serviceMethod() {
 

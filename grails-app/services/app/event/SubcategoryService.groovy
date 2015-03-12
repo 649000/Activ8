@@ -1,4 +1,4 @@
-package app
+package app.event
 
 import grails.transaction.Transactional
 

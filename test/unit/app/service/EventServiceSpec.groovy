@@ -1,4 +1,4 @@
-package app
+package app.service
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
  */
-@TestFor(UserService)
-class UserServiceSpec extends Specification {
+@TestFor(EventService)
+class EventServiceSpec extends Specification {
 
     def setup() {
     }

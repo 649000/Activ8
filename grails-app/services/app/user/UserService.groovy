@@ -1,9 +1,9 @@
-package app
+package app.user
 
 import grails.transaction.Transactional
 
 @Transactional
-class CategoryService {
+class UserService {
 
     def serviceMethod() {
 
