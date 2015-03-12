@@ -1,5 +1,6 @@
 package app.event.forms;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,5 +8,5 @@ import java.util.List;
  */
 public class BookingForm {
     String title;
-    List<BookingField> fields;
+    ArrayList<BookingField> fields;
 }
