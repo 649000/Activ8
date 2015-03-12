@@ -7,9 +7,9 @@ import app.filter.CategoryFilter
  */
 interface ICategoryService {
     public List<Category> getAllCategories();
-    public Category getCategoryById(int id);
+    public Category getCategoryById(int id);//Returns categoryId
     public List<Category> getCategoryByFilter(CategoryFilter filter);
-    public void addCategory(Category category);
+    public int addCategory(Category category);
     public void deleteCategory(Category category);
     public void updateCategory(Category category);
     public void addEventToCategory(Category category, Event event);
