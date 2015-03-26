@@ -32,6 +32,11 @@ class CategoryServiceSpec extends Specification {
         //Delete created category
         categoryService.deleteCategory(retrievedCategory);
     }
+    void "Test retrieve category by filter"(){
+        Category mockCategory = createMockCategory();
+        CategoryService categoryService = new CategoryService();
+        categoryService.addCategory();
+    }
    /* void "Test category creation"() {
         Category mockCategory = createMockCategory();
         CategoryService categoryService = new CategoryService();
