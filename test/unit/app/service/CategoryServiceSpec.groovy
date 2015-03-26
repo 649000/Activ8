@@ -21,23 +21,35 @@ class CategoryServiceSpec extends Specification {
         Category category = new Category();
         category.setName("asd");
     }
+    void "Sample test"(){
+        given:
+        String testStr = "test"
+        when:
+        testStr = "test2"
+        then:
+        testStr == "test2"
+    }
     void "Test category creation"() {
+        given:
         Category mockCategory = createMockCategory();
         CategoryService categoryService = new CategoryService();
         //Create category
+        when:
         int categoryId = categoryService.addCategory(mockCategory);
         //Retrieve created category
         Category retrievedCategory = categoryService.getCategoryById(categoryId);
-        Assert.assertEquals(retrievedCategory.getName(), mockCategory.getName());
+        then:
+        retrievedCategory != null;
+        retrievedCategory.getName() == mockCategory.getName();
         //Delete created category
         categoryService.deleteCategory(retrievedCategory);
     }
-    void "Test retrieve category by filter"(){
+  /*  void "Test retrieve category by filter"(){
         Category mockCategory = createMockCategory();
         CategoryService categoryService = new CategoryService();
         categoryService.addCategory();
     }
-   /* void "Test category creation"() {
+    void "Test category creation"() {
         Category mockCategory = createMockCategory();
         CategoryService categoryService = new CategoryService();
         //Create category
