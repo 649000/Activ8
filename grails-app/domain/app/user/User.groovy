@@ -11,7 +11,9 @@ class User {
     String email
     int phoneNumber
     String address
-    PreferenceCollection preferenceCollection;
+    //Fixed Array of Events denoting preferences - 5
+   //LinkedHashSet
+    //PreferenceCollection preferenceCollection;
 
     static constraints =
     {
@@ -26,5 +28,6 @@ class User {
     //If user adds "category" to its preferences, will add all of its subcategory,
     //If user add "subcategory" just add that individual category
     static hasMany = [preferences:Subcategory, event:Event]
+    
     
 }
