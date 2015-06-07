@@ -4,12 +4,13 @@ class Event {
     
     String name
     String description
-    String status
-    Date startDate
-    Date endDate
-    int maxCapacity
-    int numberOfParticipants
-    //int cost
+    boolean status
+    boolean privateStatus
+    String location
+    Date startDateTime
+    Date endDateTime
+    int maxNoOfAttendees
+    double fees
     
     //Event belongs to many subcategories
    
@@ -17,11 +18,6 @@ class Event {
     static constraints = {
         name(blank: false)
         description(blank: false)
-        status(blank: false)
-        startDate(blank: false)
-        endDate(blank: false)
-        maxCapacity(blank: false)
-        numberOfParticipants(blank: false)
     }
     
     static hasMany = [subcategory:Subcategory]
